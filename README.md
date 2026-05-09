@@ -13,18 +13,16 @@ A pesquisa avaliou modelos comerciais (via API) e de código aberto (via execuç
 ## Guia de Utilização
 
 1. Configuração do Ambiente:
-   
-Instale as dependências necessárias: pandas requests tqdm matplotlib seaborn
+   Instale as dependências necessárias: pandas requests tqdm matplotlib seaborn
 
 2. Configuração dos Modelos (Local vs API):
-   
-Os scripts de teste são versáteis e podem ser configurados conforme a necessidade:
+   Os scripts de teste são versáteis e podem ser configurados conforme a necessidade:
 
 Para Modelos Locais (LM Studio):
 
   1. Inicie o servidor no LM Studio (aba Local Server).
 
-  2. Certifique-se de que o servidor está ativo em http://localhost:1234.
+  2. Certifique-se de que o servidor está ativo.
 
   3. No código, verifique se a variável de URL aponta para o endereço local.
 
