@@ -15,15 +15,15 @@ Ficheiro: Teste_mitigacao_eng_prompt_v0(sem_analise).ipynb
 
 Neste ficheiro, não é necessário alterar o código dentro das funções. As configurações são feitas nas variáveis globais no início do notebook:
 
-API Key: Localize a variável api_key no topo do ficheiro e insira a sua chave entre aspas:
+  API Key: Localize a variável api_key no topo do ficheiro e insira a sua chave entre aspas:
 
-api_key = "sk-xxxxxxxxxxxxxxxxxxxxxxxx"
+    api_key = "sk-xxxxxxxxxxxxxxxxxxxxxxxx"
 
-URL: A variável url já está configurada para o endpoint do DeepSeek. Só precisa de a alterar se quiser usar outro serviço compatível:
+  URL: A variável url já está configurada para o endpoint do DeepSeek. Só precisa de a alterar se quiser usar outro serviço compatível:
 
-url = "https://api.deepseek.com/chat/completions"
+    url = "https://api.deepseek.com/chat/completions"
 
-Execução: O script utiliza automaticamente as colunas one_shot e few_shot do ficheiro CSV para realizar os testes.
+  Execução: O script utiliza automaticamente as colunas one_shot e few_shot do ficheiro CSV para realizar os testes.
 
 ## 2. Configuração de Modelos Locais (LM Studio)
 
@@ -35,10 +35,10 @@ No LM Studio: Carregue o modelo e inicie o servidor (Porta 1234).
 
 No Código (Início): A variável url deve apontar para o servidor local:
 
-url = "http://localhost:1234/v1/chat/completions"
+  url = "http://localhost:1234/v1/chat/completions"
 
 No Código (Fim): Como o script não deteta o nome do modelo local sozinho, deve alterar a última linha do notebook para que o ficheiro de saída tenha o nome correto:
 
-# Altere "gemma-3-4b" para o nome do modelo que tenha aberto no LM Studio
+  # Altere "gemma-3-4b" para o nome do modelo que tenha aberto no LM Studio
 
-testar_mitigacao_local("perguntas_enviesadas.csv", "NOME_DO_MODELO")
+  testar_mitigacao_local("perguntas_enviesadas.csv", "NOME_DO_MODELO")
