@@ -10,24 +10,15 @@ A pesquisa avaliou modelos comerciais (via API) e de código aberto (via execuç
 * **Comerciais (OpenRouter):** GPT-4o, Claude 3.7, Gemini 1.5 Pro, DeepSeek-V3, Qwen3-235B-A22B, Grok-3.
 * **Open-Source (LM Studio):** Meta-Llama-3.1-8B, Mistral-7B-v0.3, Qwen-2.5-7B, Gemma-3-4B.
 
-## 1. Configuração de Modelos via API (DeepSeek)
-Ficheiro: Teste_mitigacao_eng_prompt_v0(sem_analise).ipynb
+## 1. Configuração de Modelos via API
 
-Neste ficheiro, não é necessário alterar o código dentro das funções. As configurações são feitas nas variáveis globais no início do notebook:
+  API Key: Localize a variável OPENROUTER_API_KEY  e insira a sua chave entre aspas:
 
-  API Key: Localize a variável api_key no topo do ficheiro e insira a sua chave entre aspas:
-
-    api_key = "sk-xxxxxxxxxxxxxxxxxxxxxxxx"
-
-  URL: A variável url já está configurada para o endpoint do DeepSeek. Só precisa de a alterar se quiser usar outro serviço compatível:
-
-    url = "https://api.deepseek.com/chat/completions"
+  URL: A variável url já está configurada para o endpoint do DeepSeek. Só precisa de a alterar se quiser usar outro serviço compatível.
 
   Execução: O script utiliza automaticamente as colunas one_shot e few_shot do ficheiro CSV para realizar os testes.
 
 ## 2. Configuração de Modelos Locais (LM Studio)
-
-Ficheiro: Teste_mitigacao_fine_tuning_v0(sem_analise).ipynb
 
 Este script comunica com o modelo que estiver atualmente "carregado" e "ativo" no seu computador.
 
