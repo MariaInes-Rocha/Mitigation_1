@@ -3,7 +3,7 @@
 # Estratégias para reduzir o viés de confirmação em Grandes Modelos de Linguagem
 
 Este repositório contém os *scripts* de automação e análise utilizados no projeto.
-O presente estudo visa analisar e comparar a eficácia de diversas técnicas de mitigação deste viés.
+O presente estudo visa analisar e comparar a eficácia de diversas técnicas de mitigação do viés de confirmação.
 
 ## Modelos Avaliados
 A pesquisa avaliou modelos comerciais (via API) e de código aberto (via execução local):
