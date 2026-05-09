@@ -35,10 +35,10 @@ No LM Studio: Carregue o modelo e inicie o servidor (Porta 1234).
 
 No Código (Início): A variável url deve apontar para o servidor local:
 
-  url = "http://localhost:1234/v1/chat/completions"
+    url = "http://localhost:1234/v1/chat/completions"
 
 No Código (Fim): Como o script não deteta o nome do modelo local sozinho, deve alterar a última linha do notebook para que o ficheiro de saída tenha o nome correto:
 
-  Altere "gemma-3-4b" para o nome do modelo que tenha aberto no LM Studio
+    Altere "gemma-3-4b" para o nome do modelo que tenha aberto no LM Studio
 
-  testar_mitigacao_local("perguntas_enviesadas.csv", "NOME_DO_MODELO")
+    testar_mitigacao_local("perguntas_enviesadas.csv", "NOME_DO_MODELO")
