@@ -12,7 +12,7 @@ A pesquisa avaliou modelos comerciais (via API) e de código aberto (via execuç
 
 ## 1. Configuração de Modelos via API
 
-  API Key: Localize a variável OPENROUTER_API_KEY  e insira a sua chave entre aspas:
+  API Key: Localize a variável OPENROUTER_API_KEY  e insira a sua chave entre aspas.
 
   URL: A variável url já está configurada para o endpoint do DeepSeek. Só precisa de a alterar se quiser usar outro serviço compatível.
 
